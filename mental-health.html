@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Parent Mental Health Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+   <aside class="sidebar">
+      <div class="profile">
+        <img id="profileImage" src="assets/profile.jpg" alt="Profile Picture" class="profile-pic" />
+        <h2 id="sidebarName">Parent</h2>
+        <p id="sidebarChild">Child</p>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">🏠 Dashboard</a>
+        <a href="log.html">🧠 Log Behavior</a>
+        <a href="schedule.html" class="active">📅 Schedule</a>
+        <a href="resources.html">📚 Resources</a>
+        <a href="support.html">🚑 Emergency & Support Services</a>
+        <a href="mental-health.html">🧘 Parent Mental Health Support</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>🧘 Parent Mental Health Support</h1>
+
+      <section class="card">
+        <h2>💬 Chat with Copilot</h2>
+        <div id="chatWindow" class="chat-window">
+          <div id="chatMessages"></div>
+          <input type="text" id="chatInput" placeholder="Type how you're feeling..." />
+          <button onclick="sendChat()">Send</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>🎧 Calming Resources</h2>
+        <ul>
+          <li><a href="https://www.headspace.com/parents" target="_blank">Headspace for Parents</a></li>
+          <li><a href="https://www.mindfulnessmama.com" target="_blank">Mindfulness Mama</a></li>
+          <li><a href="https://www.youtube.com/watch?v=ZToicYcHIOU" target="_blank">5-Minute Breathing Exercise</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

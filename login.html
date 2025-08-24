@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Copilot | Setup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="login-left">
+      <img src="assets/logo.png" alt="Health Copilot Logo" class="logo" />
+      <h1>Welcome to Health Copilot</h1>
+      <p>Your personalized dashboard starts here. Please fill in your details to continue.</p>
+    </div>
+
+    <div class="login-right">
+      <form id="loginForm" class="login-form">
+        <fieldset>
+          <legend>👤 Parent Information</legend>
+          <label for="profilePic">Profile Picture:</label>
+          <input type="file" id="profilePic" accept="image/*" />
+
+          <label for="parentName">Full Name:</label>
+          <input type="text" id="parentName" required />
+
+          <label for="parentEmail">Email Address:</label>
+          <input type="email" id="parentEmail" required />
+
+          <label for="parentDOB">Date of Birth:</label>
+          <input type="date" id="parentDOB" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>🧒 Child Information</legend>
+          <label for="childName">Child's Name:</label>
+          <input type="text" id="childName" required />
+
+          <label for="childDOB">Date of Birth:</label>
+          <input type="date" id="childDOB" required />
+
+          <label for="disability">Disability:</label>
+          <select id="disability" required>
+            <option value="">-- Select --</option>
+            <option>Autism Spectrum Disorder</option>
+            <option>ADHD</option>
+            <option>Cerebral Palsy</option>
+            <option>Down Syndrome</option>
+            <option>Speech Delay</option>
+            <option>Learning Disability</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>📝 Additional Notes</legend>
+          <label for="notes">Specific needs, routines, or preferences:</label>
+          <textarea id="notes" rows="4" placeholder="Optional..."></textarea>
+        </fieldset>
+
+        <button type="submit">Continue to Dashboard</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+
